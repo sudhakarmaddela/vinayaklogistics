@@ -15,6 +15,9 @@
 							<a class="btn btn-secondary" href="<?php echo base_url().'user/adddocument'; ?>" role="button">
 								Add document
 							</a>
+							<a class="btn btn-secondary" href="<?php echo base_url().'user/employeelist'; ?>" role="button">
+								Back
+							</a>
 						</div>
 					</div>
 				</div>

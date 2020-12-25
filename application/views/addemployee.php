@@ -12,7 +12,7 @@
 					</div>
 					<div class="col-md-6 col-sm-12 text-right">
 						<div class="dropdown">
-							<a href="<?php echo base_url().'user/employeelist'; ?>" class="btn btn-secondary scroll-click" rel="content-y" role="button">All Employees</a>
+							<a href="<?php echo base_url().'user/employeelist'; ?>" class="btn btn-secondary scroll-click" rel="content-y" role="button" data-toggle="tooltip" data-placement="top" title="All Employees"><i class="icon-copy fa fa-eye" aria-hidden="true"></i></a>
 						</div>
 					</div>
 				</div>

@@ -55,7 +55,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					} 
 					else
 					{
-						$fromArray["signature"] = $this->upload->file_name;
+						$signature = $this->upload->file_name;
 
 						$data = $this->upload->data();
 						$upload_data = $this->upload->data();
@@ -82,7 +82,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					} 
 					else
 					{
-						$fromArray["right_thumb"] = $this->upload->file_name;
+						$right_thumb = $this->upload->file_name;
 
 						$data = $this->upload->data();
 						$upload_data = $this->upload->data();
@@ -110,7 +110,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					} 
 					else
 					{
-						$fromArray["left_thumb"] = $this->upload->file_name;
+						$left_thumb = $this->upload->file_name;
 
 						$data = $this->upload->data();
 						$upload_data = $this->upload->data();
@@ -138,7 +138,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					} 
 					else
 					{
-						$fromArray["photograph"] = $this->upload->file_name;
+						$photograph = $this->upload->file_name;
 
 						$data = $this->upload->data();
 						$upload_data = $this->upload->data();
@@ -198,16 +198,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				'last_company_address' => $this->input->post('last_company_address'),
 				'immediate_person' => $this->input->post('immediate_person'),
 				'immediate_person_contactno' => $this->input->post('immediate_person_contactno'),
-				'signature' => $this->upload->file_name,
-				'right_thumb' => $this->upload->file_name,
-				'left_thumb' => $this->upload->file_name,
-				'photograph' => $this->upload->file_name,
+				'signature' => $signature,
+				'right_thumb' => $right_thumb,
+				'left_thumb' => $left_thumb,
+				'photograph' => $photograph,
 				'curreent_vehicle_id' => $this->input->post('curreent_vehicle_id'),
 				'is_active' => $this->input->post('is_active'),
 				'date_added' => $this->input->post('date_added'),
 				'date_modified' => $this->input->post('date_modified'),
 				);
-
+				//echo '<pre>'; print_r($fromArray); die();
 				$this->User_model->addemployee($fromArray);
 				$this->session->set_flashdata('Success', 'Record Added Sucessfully.');
 				redirect(base_url().'user/addemployee');

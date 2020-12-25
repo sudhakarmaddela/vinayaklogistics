@@ -12,8 +12,7 @@
 					</div>
 					<div class="col-md-6 col-sm-12 text-right">
 						<div class="dropdown">
-							<a class="btn btn-secondary" href="<?php echo base_url().'user/addemployee'; ?>" role="button">
-								Add Employee
+							<a class="btn btn-secondary" href="<?php echo base_url().'user/addemployee'; ?>" role="button" data-toggle="tooltip" data-placement="top" title="Add Employee"> <i class="icon-copy fa fa-user-plus" aria-hidden="true"></i>
 							</a>
 						</div>
 					</div>

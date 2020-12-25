@@ -21,16 +21,6 @@
 			</div>
 			<!-- Checkbox select Datatable start -->
 			<div class="card-box mb-30">
-				<div class="pd-20">
-					<div class="row">
-						<div class="col-md-6 col-sm-12">
-						</div>
-						<div class="col-md-6 col-sm-12 text-right">
-							<a href="#"><button type="button" class="btn btn-danger">Delete</button></a>
-							<a href="#"><button type="button" class="btn btn-info">Edit</button></a>
-						</div>
-					</div>
-				</div>
 				<div class="pb-20" style="overflow-x:auto;">
 					<table class="table table-hover table-bordered nowrap">
 						<thead>

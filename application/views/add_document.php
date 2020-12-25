@@ -12,30 +12,6 @@
 	}
 </style>
 
-<script>
-	$(document).ready(function(){
-
-		var html = '<tr><td><input type="number" class="form-control inputsize" id="company_id" name="company_id[]" value=""></td><td><input type="date" class="form-control inputsize" id="attendance_date" name="attendance_date[]" value=""></td><td><input type="text" class="form-control inputsize" id="equipment_description" name="equipment_description[]" value=""></td><td><input type="number" class="form-control inputsize" id="vehicle_id" name="vehicle_id[]" value=""></td><td><input type="number" class="form-control inputsize" id="employee_id" name="employee_id[]" value=""></td><td><input type="datetime-local" class="form-control inputsize" id="start_date_time" name="start_date_time[]" value=""></td><td><input type="datetime-local" class="form-control inputsize" id="end_date_time" name="end_date_time[]" value=""></td><td><input type="number" class="form-control inputsize" id="net_hours" name="net_hours[]" value=""></td><td><input type="number" class="form-control inputsize" id="extra_hours" name="extra_hours[]" value=""></td><td><input type="text" class="form-control inputsize" id="break_down" name="break_down[]" value=""></td><td><input type="number" class="form-control inputsize" id="start_km" name="start_km[]" value=""></td><td><input type="number" class="form-control inputsize" id="end_km" name="end_km[]" value=""></td><td><input type="text" class="form-control inputsize" id="type" name="type[]" value=""></td><td><input type="number" class="form-control inputsize" id="diesel_in_litre" name="diesel_in_litre[]" value=""></td><td><input type="text" class="form-control inputsize" id="remark" name="remark[]" value=""></td><td><input type="date" class="form-control inputsize" id="date_added" name="date_added[]" value=""></td><td><input type="date" class="form-control inputsize" id="date_modified" name="date_modified[]" value=""></td><td><input class="btn btn-danger" type="button" id="remove" name="remove" value="Remove"></td></tr>';
-
-		var maxinputs = 5;
-		var x = 1;
-
-		$('#add').click(function(){
-
-			if (x <= maxinputs) {
-				$('#attendance_bulk').append(html);
-				x++;
-			}
-		});
-
-		$('#attendance_bulk').on('click', '#remove', function(){
-			$(this).closest('tr').remove();
-			x--;
-		})
-
-	});
-</script>
-
 <div class="main-container">
 	<div class="pd-ltr-20 xs-pd-20-10">
 		<div class="min-height-0px">
