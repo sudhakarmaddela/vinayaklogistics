@@ -35,7 +35,7 @@
 					<table class="checkbox-datatable table table-hover table-bordered nowrap">
 						<thead>
 							<tr>
-								<th>Company Id</th>
+								<th>Sr. No.</th>
 								<th>Company Code</th>
 								<th>Company Name</th>
 								<th>Company Address</th>

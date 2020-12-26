@@ -57,13 +57,13 @@
 			<div class="card-box mb-30">
 				<div class="pd-20">
 					<div class="row">
-					<div class="col-md-6 col-sm-12">
+						<div class="col-md-6 col-sm-12">
+						</div>
+						<div class="col-md-6 col-sm-12 text-right">
+							<a href="#"><button type="button" class="btn btn-danger" id="">Delete</button></a>
+							<a href="#"><button type="button" id="" class="btn btn-info">Edit</button></a>
+						</div>
 					</div>
-					<div class="col-md-6 col-sm-12 text-right">
-						<a href="#"><button type="button" class="btn btn-danger" id="">Delete</button></a>
-						<a href="#"><button type="button" id="" class="btn btn-info">Edit</button></a>
-					</div>
-				</div>
 				</div>
 				<div class="pb-20" style="overflow-x:auto;">
 					<form action="<?php echo base_url().'attendance/attendance'; ?>" method="post">
